@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
+    <title>EscapeMike</title>
+
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000000;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            cursor: default;
         }
 
-        #message {
-            color: #ff0000;
+        img {
+            max-width: 100%;
+            height: auto;
+            user-select: none;
+        }
+
+        /* Texto oculto estilo Scott */
+        .hidden-msg {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #020202; /* Quase invisível */
             font-family: monospace;
-            font-size: 48px;
-            text-align: center;
-            letter-spacing: 8px;
+            font-size: 20px;
         }
     </style>
 </head>
+
 <body>
-    <div id="message">HE IS NEAR</div>
+    <!-- Troque teaser.png pelo seu teaser -->
+    <img src="teaser.png" alt="Teaser">
+
+    <!-- Mensagem escondida -->
+    <div class="hidden-msg">March 2026</div>
 </body>
 </html>
